@@ -54,7 +54,8 @@ section {
 }
 
 .icon {
-  width: 50%;
+  /* width: 50%; */
+
   align-self: center;
   padding: 0;
   margin: 0 0 .5rem;
@@ -127,6 +128,7 @@ a {
   .icon {
     width: 100%;
   }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -135,4 +137,5 @@ a {
     font-size: 80%;
     line-height: 1.4;
   }
+
 }

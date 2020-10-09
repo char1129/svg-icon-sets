@@ -105,23 +105,9 @@ div a {
 
 @media only screen and (min-width: 38em) {
 
-  html {
-    font-size: 90%;
-    line-height: 1.4;
-  }
-
-
-  .icon {
-    width: 100%;
-  }
-
 }
 
 @media only screen and (min-width: 60em) {
 
-  html {
-    font-size: 80%;
-    line-height: 1.4;
-  }
 
 }

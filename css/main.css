@@ -13,7 +13,6 @@ html {
   font-family: Overpass, sans-serif;
   color: #fff;
   height: 100%;
-  background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
 }
 
 *,
@@ -24,6 +23,7 @@ html {
 
 body {
   display: grid;
+  background-image: linear-gradient(#ff9500, #ff5e3a);
   margin: 0;
 }
 
@@ -32,7 +32,7 @@ section {
   flex-direction: column;
   align-items: center;
   color: #fff;
-  margin: 0 6vmin;
+  margin: 0;
   padding: 0;
 }
 
@@ -46,38 +46,37 @@ div {
 }
 
 .icon {
-  width: 44%;
+  width: 8rem;
   align-self: center;
   padding: 0;
-  margin: 0 0 .4rem;
+  margin: 0 0 .25rem;
 }
 
 h2 {
   font-size: 2rem;
-  margin: 1.25rem 0 .5rem;
-  padding: 0;
+  margin: 1.25rem .25rem .5rem;
+  padding: 0 0 0 1rem;
   /* margin: 1.25rem 1.25rem .5rem; */
 }
 
 h3 {
   font-size: 1.5rem;
   text-align: center;
-  padding: 0 0 .5rem;
+  padding: 0 0 1rem;
   margin: 0;
 }
 
 p {
   text-align: left;
   padding-bottom: .5rem;
+  margin: 0 6vmin 1rem;
 }
 
-div a {
+section div a {
   text-decoration: none;
   color: #fff;
-  font-weight: bold;
-  text-align: center;
-  padding: 1rem 6vmin;
-  font-size: 5rem;
+  font-size: 1.2rem;
+  padding: 1rem;
   margin: 0;
 }
 
@@ -98,16 +97,49 @@ div a {
   /* border-radius: 4px; */
   border: 2px solid #fff;
   color: #fff;
-  font: inherit;
   text-decoration: none;
   text-transform: none;
 }
 
 @media only screen and (min-width: 38em) {
 
+  section {
+    flex-direction: row;
+  }
+
+  h2 {
+    display: block;
+    text-align: center;
+    margin: 2.25rem 0 1.5rem;
+    padding: 0;
+  }
+
+  h3 {
+    text-align: left;
+  }
+
+  .icon {
+    width: 7.5rem;
+  }
+
+  div {
+    justify-content: space-between;
+  }
+
+  p {
+    margin: 0 1.5rem 1rem;
+  }
+
+  .btn {
+    margin: 0 .5rem;
+  }
 }
 
 @media only screen and (min-width: 60em) {
+
+  div {
+    margin: 0 6vmin;
+  }
 
 
 }

@@ -9,6 +9,8 @@ html {
   line-height: 1.5;
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
   text-size-adjust: 100%;
   font-family: Overpass, sans-serif;
   color: #fff;
@@ -23,6 +25,8 @@ html {
 
 body {
   margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 section {
@@ -169,7 +173,34 @@ section div {
 @media only screen and (min-width: 60em) {
 
   p {
-    font-size: 1.125rem;
+    /* font-size: 1.125rem; */
+    margin: 0 3rem .5rem;
   }
+
+  .btn {
+    margin: 0 6rem 4rem;
+    padding: 1rem;
+  }
+
+  h2 {
+    grid-area: header;
+    grid-column: 1/span 3;
+    grid-row: 1;
+    text-align: center;
+    margin: 5.5rem 0 4.75rem;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .icon-link {
+    margin-bottom: 0;
+  }
+
+  section {
+    padding: 0 2rem;
+  }
+
 
 }
